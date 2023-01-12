@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />  
+  <title>Meera Rani</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.webp" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfilio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+           </nav>
+        <div class="container main">
+            <div class="row r1">
+                <div class="col-sm-6">
+        <div class="header-text">
+            <p>Frontend Devloper</p>
+            <h1><span>Meera Rani </span><br></h1><h3> from Faridabad</h3></div></div>
+        <div class="col-sm-6">
+            <img src="img 3.jpg" class="img1">
+        </div>
+        </div>
+ </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="img 4.jpg"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, laudantium. Debitis inventore, nesciunt reprehenderit temporibus iusto tenetur facere, aut neque error consequatur illo quasi asperiores facilis culpa consequuntur possimus corrupti.</p>
+                  <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                       <li><span>Framework</span><br>Bootstrap , Jquery</li>
+                       <li><span>Programing</span><br>JavaScript, React Js,C Language, Html, Css</li>
+                       <li><span>Backend</span><br>Php</li>
+                       <li><span>Database</span><br>MySql</li>
+                       <li><span>Wimdows</span><br>7,8,10</li>
+                   </ul> 
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                       <li><span>BCA</span><br>from IGNOU Univercity with 65%</li>
+                       <li><span>Diploma in Computer Engineering</span><br>from G.P.W Faridabad with 54%</li>
+                       <li><span>12th</span><br>from H.B.S.E with 45%</li>
+                   </ul> 
+                  </div>            
+                </div>
+
+            </div>
+        </div><br>
+    </div>
+    <!-- ........ services...... -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <h1>I am Fresher now.</h1>
+            </div><br><br><br>
+        </div>
+    </div>
+    <!-- .....portfolio... -->
+    <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">
+            My Work
+        </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.png">
+                <div class="layer">
+<h3> Namebuzz </h3>
+<a href="work1.png"> <li class="fa fa-external-link-alt"></li></a>
+                </div>        
+                </div>
+            <div class="work">
+                <img src="work2.png">
+                <div class="layer">
+                    <h3>Ecalt Services</h3>
+                    <a href="work2.png"> <li class="fa fa-external-link-alt"></li></a>
+                                    </div>  
+            </div>
+            <div class="work">
+                <img src="work3.png">
+                <div class="layer">
+                    <h3>Cpmc Solution</h3>
+                    <a href="work3.png"> <li class="fa fa-external-link-alt"></li></a>
+                                    </div>  
+            </div>
+        </div>
+
+    </div>
+</div><br><br><br>
+<!-- ...... contact...... -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>meerabaghel706@gmail.com</p>
+                <p><i class="fa fa-phone" ></i> 9811809737</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i>
+                    </a>
+               </div>
+               <a href="cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+
+    </div>
+</div>
+    <script>
+    
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            } 
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }   
+            event.currentTarget.classList.add("active-link");  
+            document.getElementById(tabname).classList.add('active-tab');     
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxuka-ji9vwtaP3tpIUMPI0BmdTZYEDXFiKsM7U-E_-0hYhGeN9r4eW_zB_xM4rqTrq/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
